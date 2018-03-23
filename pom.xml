@@ -3,7 +3,14 @@
   <groupId>com.cc3002</groupId>
   <artifactId>exercises</artifactId>
   <version>0.0.2</version>
-  <name>Exercises In Java</name>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+    </dependencies>
+    <name>Exercises In Java</name>
   <url>https://github.com/CC3002/ExercisesInJava</url>
   <description>The projects includes various exercises for the course CC3002.	</description>
 </project>

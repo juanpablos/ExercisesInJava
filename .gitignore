@@ -3,6 +3,7 @@
 
 # User-specific stuff:
 .idea/
+target/
 
 # CMake
 cmake-build-debug/

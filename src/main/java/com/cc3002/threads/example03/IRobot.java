@@ -2,16 +2,16 @@ package com.cc3002.threads.example03;
 
 public interface IRobot {
 
-  String getName();
+    String getName();
 
-  void setName(String name);
+    void setName(String name);
 
-  int getPosition();
+    int getPosition();
 
-  void stepLeft();
+    void stepLeft();
 
-  void stepRight();
+    void stepRight();
 
-  boolean isWith(IRobot friend);
+    boolean isWith(IRobot friend);
 
 }

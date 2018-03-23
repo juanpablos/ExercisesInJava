@@ -2,8 +2,8 @@ package com.cc3002.threads.example01;
 
 public interface IRobot {
 
-  String getName();
+    String getName();
 
-  void setName(String name);
+    void setName(String name);
 
 }

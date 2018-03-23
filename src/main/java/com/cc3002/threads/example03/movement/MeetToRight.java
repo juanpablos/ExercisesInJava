@@ -4,13 +4,13 @@ import com.cc3002.threads.example03.IRobot;
 
 public class MeetToRight extends AbstractMeetFriend {
 
-  public MeetToRight(final IRobot robot, final IRobot friend) {
-    super(robot, friend);
-  }
+    public MeetToRight(final IRobot robot, final IRobot friend) {
+        super(robot, friend);
+    }
 
-  @Override
-  protected void step() {
-    robot.stepRight();
-  }
+    @Override
+    protected void step() {
+        robot.stepRight();
+    }
 
 }

@@ -1,12 +1,16 @@
 package com.cc3002.patterns.adapter;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 public interface GImage {
-	public GColor getPixel(int x,int y);
-	public void  setPixel(GColor c,int x,int y);
-	public int height();
-	public int width();
-	public void draw(Graphics g);
+    GColor getPixel(int x, int y);
+
+    void setPixel(GColor c, int x, int y);
+
+    int height();
+
+    int width();
+
+    void draw(Graphics g);
 }
 
