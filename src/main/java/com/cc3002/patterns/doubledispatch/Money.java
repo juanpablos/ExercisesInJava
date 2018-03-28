@@ -16,11 +16,11 @@ public abstract class Money implements IMoney {
     public abstract IMoney add(IMoney money);
 
     @Override
-    public abstract USD addUSD(USD usd);
+    public abstract USD addToUSD(USD usd);
 
     @Override
-    public abstract CLP addCLP(CLP clp);
+    public abstract CLP addToCLP(CLP clp);
 
     @Override
-    public abstract JPY addJPY(JPY jpy);
+    public abstract JPY addToJPY(JPY jpy);
 }

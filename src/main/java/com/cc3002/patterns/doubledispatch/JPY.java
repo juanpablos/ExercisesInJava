@@ -7,21 +7,21 @@ public class JPY extends Money {
 
     @Override
     public IMoney add(IMoney money) {
-        return money.addJPY(this);
+        return money.addToJPY(this);
     }
 
     @Override
-    public USD addUSD(USD usd) {
-        return null;
+    public USD addToUSD(USD usd) {
+        return new USD(usd.getMoney() + getMoney() * 0.0094);
     }
 
     @Override
-    public CLP addCLP(CLP clp) {
-        return null;
+    public CLP addToCLP(CLP clp) {
+        return new CLP(clp.getMoney() + getMoney() * 5.74081);
     }
 
     @Override
-    public JPY addJPY(JPY jpy) {
+    public JPY addToJPY(JPY jpy) {
         return new JPY(getMoney() + jpy.getMoney());
     }
 }
