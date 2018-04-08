@@ -1,4 +1,4 @@
-package tests;
+package com.cc3002.tests;
 
 import org.junit.*;
 
