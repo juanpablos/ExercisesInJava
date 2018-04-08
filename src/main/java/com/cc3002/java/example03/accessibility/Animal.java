@@ -11,7 +11,7 @@ public class Animal {
         return name;
     }
 
-    public String getPair(final Animal paired) {
+    public String getPair(Animal paired) {
         return this.getName() + " with " + paired.getName();
     }
 
