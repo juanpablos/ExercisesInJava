@@ -1,4 +1,4 @@
-package com.cc3002.patterns.template.Starbuzz;
+package com.cc3002.patterns.template.recipe.before;
 
 
 //CafeineBeverage

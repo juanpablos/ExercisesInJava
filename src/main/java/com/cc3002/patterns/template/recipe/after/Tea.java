@@ -1,6 +1,6 @@
-package com.cc3002.patterns.template.StarbuzzV1;
+package com.cc3002.patterns.template.recipe.after;
 
-//CafeineBeverage
+
 public class Tea extends CafeineBeverage {
 
     @Override

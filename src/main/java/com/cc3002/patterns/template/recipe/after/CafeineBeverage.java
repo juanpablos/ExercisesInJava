@@ -1,10 +1,11 @@
-package com.cc3002.patterns.template.StarbuzzV1;
+package com.cc3002.patterns.template.recipe.after;
 
 
-public abstract class CafeineBeverage {
+public abstract class CafeineBeverage implements HotBeverage {
     /**
      * template method
      */
+    @Override
     public void prepareRecipe() {
         boilWater();
         brew();
