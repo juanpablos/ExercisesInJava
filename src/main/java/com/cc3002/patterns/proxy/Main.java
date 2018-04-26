@@ -2,15 +2,20 @@ package com.cc3002.patterns.proxy;
 
 public class Main {
     public static void main(String[] args) {
-        HTTPServer ucursos = new UcursosServer();
-        //ucursos = new HTTPProxy(ucursos);
+        HTTPServer ucursos = new UCursosServer();
 
-        HTTPClient juanito = new HTTPClient("Juanito", ucursos);
-        HTTPClient paula = new HTTPClient("Paula", ucursos);
+        HTTPClient juanito = new UCursosClient("Juanito");
+        HTTPClient maria = new UCursosClient("Maria");
 
-        paula.requestServer("Mark");
-        juanito.requestServer("Image");
-        paula.requestServer("Info");
-        juanito.requestServer("Nothing");
+        ucursos.sendContents("Mark", juanito);
+        ucursos.sendContents("Image", maria);
+        ucursos.sendContents("Info", maria);
+
+        System.out.println("----------------");
+
+        ucursos = new HTTPProxy(ucursos);
+        ucursos.sendContents("Mark", juanito);
+        ucursos.sendContents("Image", maria);
+        ucursos.sendContents("Info", maria);
     }
 }

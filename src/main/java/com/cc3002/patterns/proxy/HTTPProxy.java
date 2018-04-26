@@ -1,38 +1,29 @@
 package com.cc3002.patterns.proxy;
 
-public class HTTPProxy implements HTTPServer {
+public class HTTPProxy implements HTTPServer, HTTPClient {
+
     private HTTPServer server;
-    public HTTPProxy(HTTPServer ucursos) {
-        server = ucursos;
+    private HTTPClient user;
+
+    public HTTPProxy(HTTPServer server) {
+        this.server = server;
     }
 
     @Override
-    public void registerUser(HTTPClient user) {
-        server.registerUser(user);
+    public void receiveContents(String contentType, String message) {
+        System.out.println("[Proxy Intercepting " + user.getUserName() + "]: " + message);
+        user.receiveContents(contentType, message);
     }
 
     @Override
-    public void sendMarksTo(int mark, String userName) {
-
+    public String getUserName() {
+        return user.getUserName();
     }
 
     @Override
-    public void sendImageTo(String image, String userName) {
-
-    }
-
-    @Override
-    public void sendInfoTo(String message, String userName) {
-
-    }
-
-    @Override
-    public void sendContentsTo(String message, String contentType, String userName) {
-
-    }
-
-    @Override
-    public void requestInfoBy(String contentType, String name) {
-
+    public void sendContents(String contentType, HTTPClient client) {
+        user = client;
+        System.out.println("[Proxy Intercepting " + user.getUserName() + " Request]: " + contentType);
+        server.sendContents(contentType, this);
     }
 }

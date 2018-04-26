@@ -5,6 +5,7 @@ import java.util.Observer;
 
 public class Client implements Observer {
     private int id;
+
     public Client(int i) {
         id = i;
     }
@@ -13,7 +14,7 @@ public class Client implements Observer {
     public void update(Observable o, Object arg) {
         if (arg instanceof String) {
             String message = (String) arg;
-            System.out.println("[Client "+ id + "]: "+message);
+            System.out.println("[Client " + id + "]: " + message);
         }
     }
 
