@@ -36,6 +36,5 @@ public class Main {
         arr2 = arr.clone();
         qs.sort(arr2, 0, n - 1);
         printArray(arr2);
-
     }
 }

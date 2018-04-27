@@ -1,7 +1,7 @@
 package com.cc3002.patterns.template.recipe.after;
 
 
-public abstract class CafeineBeverage implements HotBeverage {
+public abstract class CaffeineBeverage implements HotBeverage {
     /**
      * template method
      */

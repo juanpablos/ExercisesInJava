@@ -1,7 +1,7 @@
 package com.cc3002.patterns.template.recipe.after;
 
 
-public class Coffee extends CafeineBeverage {
+public class Coffee extends CaffeineBeverage {
 
     @Override
     public void brew() {

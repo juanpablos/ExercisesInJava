@@ -1,7 +1,6 @@
 package com.cc3002.patterns.template.recipe.before;
 
 
-//CafeineBeverage
 public class Tea {
 
     public void prepareTea() {
