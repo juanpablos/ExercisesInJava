@@ -1,4 +1,4 @@
-package com.cc3002.patterns.adapter;
+package com.cc3002.patterns.adapter.GImage;
 
 public class GColor {
     private int red;

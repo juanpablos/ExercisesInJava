@@ -1,4 +1,4 @@
-package com.cc3002.patterns.adapter;
+package com.cc3002.patterns.adapter.GImage;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
