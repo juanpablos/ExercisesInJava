@@ -1,4 +1,4 @@
-package com.cc3002.patterns.filesystem;
+package com.cc3002.patterns.composite.filesystem;
 
 import java.util.ArrayList;
 import java.util.List;

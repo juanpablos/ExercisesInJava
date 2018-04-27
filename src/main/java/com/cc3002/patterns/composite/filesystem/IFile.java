@@ -1,4 +1,4 @@
-package com.cc3002.patterns.filesystem;
+package com.cc3002.patterns.composite.filesystem;
 
 public interface IFile {
     void mkdir(String name);
