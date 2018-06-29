@@ -1,9 +1,8 @@
-package com.cc3002.patterns.visitor.bool;
+package com.cc3002.patterns.visitor.ast.bool;
 
-import com.cc3002.patterns.visitor.visitor.Visitor;
+import com.cc3002.patterns.visitor.ast.visitor.Visitor;
 
 public class AndExp implements BoolExp {
-
     private BoolExp left, right;
 
     public AndExp(BoolExp left, BoolExp right) {
@@ -12,9 +11,9 @@ public class AndExp implements BoolExp {
     }
 
     @Override
-    public boolean getValue() {
-        if (left.getValue()) {
-            return right.getValue();
+    public boolean eval() {
+        if (left.eval()) {
+            return right.eval();
         }
         return false;
     }

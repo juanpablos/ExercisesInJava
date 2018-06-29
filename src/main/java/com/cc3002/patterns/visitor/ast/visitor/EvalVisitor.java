@@ -1,16 +1,15 @@
-package com.cc3002.patterns.visitor.visitor;
+package com.cc3002.patterns.visitor.ast.visitor;
 
-import com.cc3002.patterns.visitor.bool.AndExp;
-import com.cc3002.patterns.visitor.bool.Literal;
-import com.cc3002.patterns.visitor.bool.OrExp;
+import com.cc3002.patterns.visitor.ast.bool.AndExp;
+import com.cc3002.patterns.visitor.ast.bool.Literal;
+import com.cc3002.patterns.visitor.ast.bool.OrExp;
 
 public class EvalVisitor implements Visitor {
-
     private boolean value;
 
     @Override
     public void visitLiteral(Literal l) {
-        value = l.getValue();
+        value = l.eval();
     }
 
     @Override

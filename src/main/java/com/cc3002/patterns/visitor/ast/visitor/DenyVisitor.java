@@ -1,17 +1,16 @@
-package com.cc3002.patterns.visitor.visitor;
+package com.cc3002.patterns.visitor.ast.visitor;
 
-import com.cc3002.patterns.visitor.bool.AndExp;
-import com.cc3002.patterns.visitor.bool.BoolExp;
-import com.cc3002.patterns.visitor.bool.Literal;
-import com.cc3002.patterns.visitor.bool.OrExp;
+import com.cc3002.patterns.visitor.ast.bool.AndExp;
+import com.cc3002.patterns.visitor.ast.bool.BoolExp;
+import com.cc3002.patterns.visitor.ast.bool.Literal;
+import com.cc3002.patterns.visitor.ast.bool.OrExp;
 
 public class DenyVisitor implements Visitor {
-
     private BoolExp denied;
 
     @Override
     public void visitLiteral(Literal l) {
-        denied = new Literal(!l.getValue());
+        denied = new Literal(!l.eval());
     }
 
     @Override

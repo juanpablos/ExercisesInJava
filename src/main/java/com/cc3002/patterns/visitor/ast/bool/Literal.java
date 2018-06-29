@@ -1,9 +1,8 @@
-package com.cc3002.patterns.visitor.bool;
+package com.cc3002.patterns.visitor.ast.bool;
 
-import com.cc3002.patterns.visitor.visitor.Visitor;
+import com.cc3002.patterns.visitor.ast.visitor.Visitor;
 
 public class Literal implements BoolExp {
-
     private boolean value;
 
     public Literal(boolean value) {
@@ -11,7 +10,7 @@ public class Literal implements BoolExp {
     }
 
     @Override
-    public boolean getValue() {
+    public boolean eval() {
         return value;
     }
 

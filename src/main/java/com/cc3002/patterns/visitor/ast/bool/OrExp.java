@@ -1,6 +1,6 @@
-package com.cc3002.patterns.visitor.bool;
+package com.cc3002.patterns.visitor.ast.bool;
 
-import com.cc3002.patterns.visitor.visitor.Visitor;
+import com.cc3002.patterns.visitor.ast.visitor.Visitor;
 
 public class OrExp implements BoolExp {
     private BoolExp left, right;
@@ -11,11 +11,11 @@ public class OrExp implements BoolExp {
     }
 
     @Override
-    public boolean getValue() {
-        if (left.getValue()) {
+    public boolean eval() {
+        if (left.eval()) {
             return true;
         }
-        return right.getValue();
+        return right.eval();
     }
 
     @Override
