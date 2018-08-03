@@ -37,7 +37,7 @@ public class MusicPlayer {
                 throw new RuntimeException("Format is not supported");
         }
 
-        System.out.println("Now playing: " + decoder);
+        System.out.println("Now playing: " + decoder.getDecodedSong() + " with " + decoder);
 
     }
 

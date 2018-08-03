@@ -10,8 +10,8 @@ public class OggDecoder implements Codec {
     }
 
     @Override
-    public String getDecodedSong() {
-        return song.getName();
+    public DecodedSong getDecodedSong() {
+        return new DecodedSong(song.getName());
     }
 
     @Override
