@@ -3,7 +3,7 @@ package com.cc3002.patterns.state.phone;
 public class LockState extends State {
 
     @Override
-    public void pressLock(String password) {
+    public void unlock(String password) {
         if (phone.getPassword().equals(password)) {
             phone.setState(new InHomeState());
         } else {

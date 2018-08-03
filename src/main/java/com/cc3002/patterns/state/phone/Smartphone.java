@@ -28,7 +28,7 @@ public class Smartphone {
     }
 
     public void unlockPhone(String password) {
-        state.pressLock(password);
+        state.unlock(password);
     }
 
     public void lockPhone() {

@@ -7,7 +7,7 @@ public class State {
         this.phone = phone;
     }
 
-    public void pressLock(String password) {
+    public void unlock(String password) {
 
     }
 
