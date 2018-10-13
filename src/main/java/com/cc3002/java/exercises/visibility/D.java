@@ -5,7 +5,7 @@ public class D extends C {
         return "D.method1()";
     }
 
-    static public void main(String[] args) {
+     public static void main(String[] args) {
         System.out.println(new D().method2());
 
     }
