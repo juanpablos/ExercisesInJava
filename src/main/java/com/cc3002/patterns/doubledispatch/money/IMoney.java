@@ -1,4 +1,4 @@
-package com.cc3002.patterns.doubledispatch;
+package com.cc3002.patterns.doubledispatch.money;
 
 public interface IMoney {
     double getMoney();

@@ -1,8 +1,8 @@
 package com.cc3002.doubledispatch;
 
-import com.cc3002.patterns.doubledispatch.CLP;
-import com.cc3002.patterns.doubledispatch.IMoney;
-import com.cc3002.patterns.doubledispatch.USD;
+import com.cc3002.patterns.doubledispatch.money.CLP;
+import com.cc3002.patterns.doubledispatch.money.IMoney;
+import com.cc3002.patterns.doubledispatch.money.USD;
 import org.junit.Before;
 import org.junit.Test;
 
