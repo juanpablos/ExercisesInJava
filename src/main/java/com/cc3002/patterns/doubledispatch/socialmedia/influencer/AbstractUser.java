@@ -1,6 +1,6 @@
-package com.cc3002.patterns.doubledispatch.events.influencer;
+package com.cc3002.patterns.doubledispatch.socialmedia.influencer;
 
-import com.cc3002.patterns.doubledispatch.events.media.*;
+import com.cc3002.patterns.doubledispatch.socialmedia.media.*;
 
 public abstract class AbstractUser implements User {
     private String username;

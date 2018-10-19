@@ -1,9 +1,9 @@
-package com.cc3002.patterns.doubledispatch.events.influencer;
+package com.cc3002.patterns.doubledispatch.socialmedia.influencer;
 
-import com.cc3002.patterns.doubledispatch.events.media.AhoraGram;
-import com.cc3002.patterns.doubledispatch.events.media.CaraBook;
-import com.cc3002.patterns.doubledispatch.events.media.RojoDit;
-import com.cc3002.patterns.doubledispatch.events.media.TuTube;
+import com.cc3002.patterns.doubledispatch.socialmedia.media.AhoraGram;
+import com.cc3002.patterns.doubledispatch.socialmedia.media.CaraBook;
+import com.cc3002.patterns.doubledispatch.socialmedia.media.RojoDit;
+import com.cc3002.patterns.doubledispatch.socialmedia.media.TuTube;
 
 public class Experienced extends AbstractUser {
     public Experienced(String username) {

@@ -1,6 +1,6 @@
-package com.cc3002.patterns.doubledispatch.events.media;
+package com.cc3002.patterns.doubledispatch.socialmedia.media;
 
-import com.cc3002.patterns.doubledispatch.events.influencer.User;
+import com.cc3002.patterns.doubledispatch.socialmedia.influencer.User;
 
 public class AhoraGram implements SocialMedia {
     @Override
