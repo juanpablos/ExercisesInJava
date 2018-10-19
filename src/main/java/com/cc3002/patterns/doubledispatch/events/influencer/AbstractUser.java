@@ -31,7 +31,9 @@ public abstract class AbstractUser implements User {
     }
 
     @Override
-    public abstract void publishOnRojoDit(RojoDit rojoDit);
+    public void publishOnRojoDit(RojoDit rojoDit) {
+        // do nothing
+    }
 
     @Override
     public abstract void publishOnTuTube(TuTube tuTube);
